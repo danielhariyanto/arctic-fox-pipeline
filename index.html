@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arctic Fox Pipeline — Alaska gas, delivered to Alaskans</title>
+<meta name="description" content="Arctic Fox: a 484-mile in-state natural gas and NGL pipeline from Prudhoe Bay to Fairbanks. Privately financed, no state subsidy, cutting Interior Alaska energy cost by roughly two-thirds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d1b2a;--ink2:#1b263b;--frost:#e0e6ed;--ice:#7fb0d4;--steel:#415a77;--amber:#e8a33d;--amber2:#f2b757;--paper:#f7f9fb;--line:#d5dde6;--good:#2e8b57;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Barlow Condensed','Inter',sans-serif;letter-spacing:.01em;line-height:1.1}
+a{color:var(--steel);text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:50;background:rgba(13,27,42,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:1.25rem;letter-spacing:.03em}
+.brand .dot{width:12px;height:12px;border-radius:50%;background:var(--amber);box-shadow:0 0 12px var(--amber)}
+.navlinks{display:flex;gap:22px}
+.navlinks a{color:#c9d6e2;font-size:.86rem;font-weight:500}
+.navlinks a:hover{color:#fff}
+@media(max-width:760px){.navlinks{display:none}}
+.hero{position:relative;color:#fff;min-height:82vh;display:flex;align-items:center;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url('images/hero-tundra.jpg') center 40%/cover no-repeat;transform:scale(1.03)}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(13,27,42,.92),rgba(13,27,42,.72) 45%,rgba(27,38,59,.45))}
+.hero .wrap{position:relative;z-index:2;padding:70px 22px}
+.eyebrow{display:inline-block;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-size:.82rem;color:var(--amber);border:1px solid rgba(232,163,61,.5);padding:5px 14px;border-radius:40px;margin-bottom:22px}
+.hero h1{font-size:clamp(2.8rem,7vw,5.2rem);font-weight:700;margin-bottom:14px}
+.hero .tag{font-size:clamp(1.15rem,2.5vw,1.6rem);color:var(--frost);max-width:640px;margin-bottom:10px}
+.hero .sub{color:#a9bccf;max-width:560px;margin-bottom:30px}
+.cta{display:inline-flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:8px;font-weight:600;font-size:.95rem;transition:.18s}
+.btn.primary{background:var(--amber);color:#20160a}
+.btn.primary:hover{background:var(--amber2);transform:translateY(-2px)}
+.btn.ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.hero .sponsor{margin-top:34px;font-size:.8rem;color:#8fa4b8;letter-spacing:.04em}
+section{padding:78px 0}
+.section-head{max-width:720px;margin-bottom:44px}
+.kicker{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);font-size:.8rem;margin-bottom:10px}
+h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:700;color:var(--ink);margin-bottom:12px}
+.section-head p{color:var(--steel);font-size:1.08rem}
+.alt{background:var(--ink);color:#e6eef5}
+.alt h2{color:#fff}.alt .section-head p{color:#a9bccf}.alt .kicker{color:var(--amber)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:860px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 18px;position:relative;overflow:hidden}
+.alt .stat{background:var(--ink2);border-color:rgba(255,255,255,.09)}
+.stat .num{font-family:'Barlow Condensed';font-weight:700;font-size:2rem;color:var(--ink);line-height:1}
+.alt .stat .num{color:#fff}
+.stat .num .u{font-size:1.05rem;color:var(--steel)}
+.alt .stat .num .u{color:var(--ice)}
+.stat .lab{margin-top:8px;font-size:.82rem;color:var(--steel);line-height:1.35}
+.alt .stat .lab{color:#9fb3c7}
+.stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--amber)}
+.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media(max-width:820px){.grid2{grid-template-columns:1fr;gap:26px}}
+.checklist{list-style:none}
+.checklist li{position:relative;padding-left:30px;margin-bottom:13px;color:var(--ink2)}
+.alt .checklist li{color:#d3e0ec}
+.checklist li::before{content:"›";position:absolute;left:6px;top:-1px;color:var(--amber);font-weight:700;font-size:1.2rem}
+.photo{border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -18px rgba(13,27,42,.5);border:1px solid var(--line)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo figcaption{background:var(--ink);color:#c9d6e2;font-size:.78rem;padding:9px 14px;letter-spacing:.03em}
+.callout{background:linear-gradient(135deg,var(--ink),var(--ink2));color:#fff;border-radius:14px;padding:30px 32px;border-left:4px solid var(--amber)}
+.callout .big{font-family:'Barlow Condensed';font-weight:600;font-size:1.5rem;line-height:1.2;margin-bottom:6px}
+.callout p{color:#a9bccf}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
+table{border-collapse:collapse;width:100%;min-width:620px}
+th,td{padding:13px 16px;text-align:left;font-size:.92rem;border-bottom:1px solid var(--line)}
+th{background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.04em;font-size:.86rem;text-transform:uppercase}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:nth-child(even){background:#f2f6fa}
+td .save{color:var(--good);font-weight:700}
+.tnote{font-size:.85rem;color:var(--steel);margin-top:14px}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:820px){.specs{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.specs{grid-template-columns:1fr}}
+.spec{background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:16px}
+.spec .k{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ice);margin-bottom:5px}
+.spec .v{font-family:'Barlow Condensed';font-weight:600;font-size:1.15rem;color:#fff;line-height:1.15}
+.tl-item{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+@media(max-width:640px){.tl-item{grid-template-columns:1fr;gap:4px}}
+.tl-item .yr{font-family:'Barlow Condensed';font-weight:700;font-size:1.3rem;color:var(--amber)}
+.tl-item .h{font-weight:600;color:var(--ink);margin-bottom:2px}
+.tl-item .d{color:var(--steel);font-size:.92rem}
+.econ{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+@media(max-width:640px){.econ{grid-template-columns:1fr}}
+.econ .row{display:flex;justify-content:space-between;gap:16px;padding:15px 20px;border-bottom:1px solid var(--line)}
+.econ .row .k{color:var(--steel);font-size:.9rem}
+.econ .row .v{font-family:'Barlow Condensed';font-weight:600;color:var(--ink);text-align:right}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;padding:18px 22px;font-weight:600;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:'Barlow Condensed';font-size:1.6rem;color:var(--amber);transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 22px 20px;color:var(--steel);font-size:.96rem}
+.asks{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:860px){.asks{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.asks{grid-template-columns:1fr}}
+.ask{background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:22px;border-top:3px solid var(--amber)}
+.ask .t{font-family:'Barlow Condensed';font-weight:600;letter-spacing:.1em;color:var(--amber);font-size:.85rem;margin-bottom:10px}
+.ask p{color:#cdd9e5;font-size:.9rem}
+footer{background:#08131f;color:#8fa4b8;padding:54px 0 40px;font-size:.88rem}
+footer h4{color:#fff;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.05em;margin-bottom:12px;font-size:1.1rem}
+footer a{color:var(--ice)}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:flex-start}
+@media(max-width:640px){.fgrid{grid-template-columns:1fr}}
+.notice{font-size:.76rem;color:#5f7488;line-height:1.5;margin-top:26px;border-top:1px solid rgba(255,255,255,.08);padding-top:20px}
+.two{columns:2;gap:40px}@media(max-width:640px){.two{columns:1}}
+.two .checklist li{break-inside:avoid}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="dot"></span>ARCTIC FOX</a>
+  <div class="navlinks">
+    <a href="#glance">Overview</a><a href="#route">Route</a><a href="#delivers">Delivers</a><a href="#economics">Economics</a><a href="#timeline">Timeline</a><a href="#faq">FAQ</a><a href="#ask">The Ask</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="bg"></div>
+  <div class="wrap">
+    <span class="eyebrow">Public Launch Edition · April 2026</span>
+    <h1>Arctic Fox Pipeline</h1>
+    <p class="tag">Alaska gas, delivered to Alaskans — now.</p>
+    <p class="sub">An in-state natural gas and NGL pipeline from Prudhoe Bay to Fairbanks. Privately financed. No state subsidy required.</p>
+    <div class="cta"><a class="btn primary" href="#glance">See the project</a><a class="btn ghost" href="#ask">Get involved</a></div>
+    <p class="sponsor">Sponsored by Fairbanks Pipeline Company, Inc.</p>
+  </div>
+</header>
+
+<section id="glance"><div class="wrap">
+  <div class="section-head"><div class="kicker">At a Glance</div><h2>What this project is, in one screen</h2><p>A 484-mile, 12-inch in-state natural gas and NGL pipeline — Prudhoe Bay to the Fairbanks / North Pole / Eielson load center.</p></div>
+  <div class="stats">
+    <div class="stat"><div class="num">484<span class="u"> mi</span></div><div class="lab">Primary line length</div></div>
+    <div class="stat"><div class="num">12<span class="u">″×0.312″</span></div><div class="lab">API 5L X-65 line pipe</div></div>
+    <div class="stat"><div class="num">19<span class="u"> Bcf/yr</span></div><div class="lab">Base Interior demand</div></div>
+    <div class="stat"><div class="num">~$707<span class="u">M</span></div><div class="lab">Total project CAPEX (screening)</div></div>
+    <div class="stat"><div class="num">$6.77<span class="u">/Mcf</span></div><div class="lab">Break-even delivered dry gas</div></div>
+    <div class="stat"><div class="num">$24.76<span class="u">/Mcf</span></div><div class="lab">Current Interior reference (IGU Sch C)</div></div>
+    <div class="stat"><div class="num">~$387<span class="u">M/yr</span></div><div class="lab">Estimated consumer savings, base case</div></div>
+    <div class="stat"><div class="num">14<span class="u">% ROE</span></div><div class="lab">Standard transportation earnings</div></div>
+  </div>
+  <div style="margin-top:36px" class="grid2">
+    <ul class="checklist">
+      <li>A 484-mile, 12-inch in-state natural gas and NGL pipeline.</li>
+      <li>Prudhoe Bay → Livengood → Fox (Fairbanks / North Pole / Eielson).</li>
+      <li>Sized to known Interior load: ~19 Bcf/yr base, scalable with the 2026 Non-Binding Open Season.</li>
+      <li>Privately financed. No state subsidy required.</li>
+      <li>Cuts delivered Interior gas cost by roughly two-thirds vs. today's market.</li>
+      <li>Same corridor as the Dalton / Elliott / Richardson highways — roadside, accessible, buildable.</li>
+      <li>Targets a service-ready window in years, not decades.</li>
+    </ul>
+    <div class="callout"><div class="big">The Gap</div><p>Alaska produces gas at world scale. Alaskans pay world-import prices for it. Arctic Fox closes that gap.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="problem"><div class="wrap">
+  <div class="section-head"><div class="kicker">The Problem</div><h2>Interior Alaska energy</h2><p>High cost, fragile supply — sitting on top of one of the largest gas reserves in North America.</p></div>
+  <div class="grid2">
+    <ul class="checklist">
+      <li>Interior Alaskans pay among the highest delivered energy costs in the United States.</li>
+      <li>Reference utility tariff (IGU Schedule C): roughly <strong>$24.76/Mcf</strong> delivered.</li>
+      <li>Heating-season propane and refined fuels routinely run $3.50–$4.65/gal at the burner tip.</li>
+      <li>GVEA generation depends on imported diesel, naphtha, and aging coal — exposed to barge, rail, and global crude swings.</li>
+      <li>Alaska spends ~18.5% of GDP on energy. The U.S. average is 6–8%.</li>
+      <li>Meanwhile, ~35 trillion cubic feet of proven gas sits at Prudhoe Bay, 500 miles up the Dalton.</li>
+    </ul>
+    <figure class="photo"><img src="images/goldstream-winter.jpg" alt="Goldstream Valley, Fairbanks in winter"><figcaption>Goldstream Valley, Fairbanks</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="solution"><div class="wrap">
+  <div class="section-head"><div class="kicker">The Solution</div><h2>Arctic Fox</h2><p>A small-bore, fit-for-purpose, in-state pipeline — engineered for what the Interior actually needs.</p></div>
+  <div class="grid2">
+    <figure class="photo"><img src="images/corridor-valley.jpg" alt="Dalton Highway pipeline corridor through a broad valley"><figcaption>Dalton Highway corridor</figcaption></figure>
+    <ul class="checklist">
+      <li>Right-sized to known load (19 Bcf/yr) with headroom up to 51 Bcf/yr — not export-scale, not speculative.</li>
+      <li>Roadside alignment — Dalton / Elliott / Richardson corridor, where access already exists.</li>
+      <li>Carries dry gas plus NGLs (propane, butanes, pentanes+) — products Interior Alaskans already buy.</li>
+      <li>Treatment and fractionation at the Fox plant; clean dry gas delivered to GVEA, IGU, Eielson, Clear, Pogo, and future data centers.</li>
+      <li>Privately financed. No subsidy. No state guarantee.</li>
+      <li>Standard utility-style transportation earnings: 14% ROE, regulated rate base.</li>
+      <li>Open architecture for state, Native Corporation, and load-center equity participation.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="alt" id="route"><div class="wrap">
+  <div class="section-head"><div class="kicker">The Route</div><h2>Prudhoe Bay → Livengood → Fox</h2><p>Through Atigun Pass and the Brooks Range, roadside along Alaska's existing highway corridor.</p></div>
+  <div class="grid2">
+    <ul class="checklist">
+      <li><strong>418.2 mi</strong> — Prudhoe Bay (CGF) → Livengood</li>
+      <li><strong>65.98 mi</strong> — Livengood → Fox</li>
+      <li><strong>484.18 mi</strong> — Total primary line</li>
+      <li>5″ parallel NGL service line where required</li>
+      <li>Roadside alignment along Dalton, Elliott, Richardson Highways</li>
+      <li>No on-line compression assumed — CGF discharge at 4,000 psia</li>
+      <li>Treatment / fractionation at Fox plant</li>
+      <li>Secondary distribution: GVEA, IGU, Eielson AFB, North Pole</li>
+    </ul>
+    <figure class="photo"><img src="images/atigun-pass.jpg" alt="Atigun Pass, Brooks Range crossing"><figcaption>Atigun Pass — Brooks Range crossing</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="whynow"><div class="wrap">
+  <div class="section-head"><div class="kicker">Why Now</div><h2>The window for a disciplined, in-state buildout is open</h2></div>
+  <div class="two"><ul class="checklist">
+    <li>Steel and line-pipe markets have stabilized post-2022. Mid-cycle pricing favors disciplined staged procurement.</li>
+    <li>Hilcorp is now the primary North Slope gas counterparty after BP's 2020 divestiture — a single, motivated seller.</li>
+    <li>GVEA is actively seeking long-horizon firm fuel for its Interior generation fleet.</li>
+    <li>IGU is buying spot LNG trucked from Cook Inlet — a willing buyer of pipeline gas at a real discount.</li>
+    <li>Eielson AFB and DoD installations have been directed to harden energy supply for the Interior corridor.</li>
+    <li>Alaska Native regional and village corporations are positioned to take equity in infrastructure that lowers community energy cost.</li>
+    <li>The corridor is already built — TAPS, the Dalton, and existing utility ROW make the engineering case straightforward.</li>
+  </ul></div>
+</div></section>
+<section class="alt" id="delivers"><div class="wrap">
+  <div class="section-head"><div class="kicker">What Arctic Fox Delivers</div><h2>Dry gas and NGLs</h2><p>The same products Interior Alaskans already buy — at a fraction of today's delivered cost.</p></div>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Product</th><th>Annual delivery</th><th>Break-even rate</th><th>Current market</th><th>Savings</th></tr></thead>
+    <tbody>
+      <tr><td>Dry gas</td><td>19 Bcf</td><td>$6.77 / Mcf</td><td>$24.76 / Mcf</td><td><span class="save">~72.7%</span></td></tr>
+      <tr><td>Propane</td><td>14.08M gal (731 bpd)</td><td>$1.39 / gal</td><td>$3.96 / gal</td><td><span class="save">~65%</span></td></tr>
+      <tr><td>N-Butane</td><td>4.0M gal (260 bpd)</td><td>$1.57 / gal</td><td>$3.76 / gal</td><td><span class="save">~58%</span></td></tr>
+      <tr><td>Iso-Butane</td><td>2.0M gal (130 bpd)</td><td>$1.51 / gal</td><td>$3.76 / gal</td><td><span class="save">~60%</span></td></tr>
+      <tr><td>Pentanes+</td><td>4.8M gal (313 bpd)</td><td>$1.82 / gal</td><td>$4.65 / gal</td><td><span class="save">~61%</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="tnote" style="color:#a9bccf"><strong style="color:#fff">Aggregate consumer savings: ~$387M / yr</strong> (~66% of current market spend). Every product carries its share of total system cost on an energy basis — no cross-subsidy. Priced at cost-of-service plus contracted return, well below Interior market.</p>
+</div></section>
+
+<section id="technical"><div class="wrap">
+  <div class="section-head"><div class="kicker">Technical Overview</div><h2>Engineered to Arctic conditions</h2><p>Sized to Interior demand, built to Arctic-service code.</p></div>
+  <div class="specs">
+    <div class="spec"><div class="k">Primary line</div><div class="v">12″ OD × 0.312″ wall, API 5L X-65</div></div>
+    <div class="spec"><div class="k">Length</div><div class="v">484.18 mi, roadside corridor</div></div>
+    <div class="spec"><div class="k">Rated capacity</div><div class="v">~19 Bcf/yr (12″ base case)</div></div>
+    <div class="spec"><div class="k">Wet feed at Prudhoe</div><div class="v">~20.18 Bcf/yr</div></div>
+    <div class="spec"><div class="k">Total steel</div><div class="v">~53,682 net tons</div></div>
+    <div class="spec"><div class="k">Compression</div><div class="v">None on-line; CGF at 4,000 psia</div></div>
+    <div class="spec"><div class="k">Treatment</div><div class="v">Dehydration, CO₂ strip, NGL fractionation at Fox</div></div>
+    <div class="spec"><div class="k">Refinery sizing (base)</div><div class="v">~1,721 bpd marketable C3+ liquids</div></div>
+    <div class="spec"><div class="k">Pipe ladder</div><div class="v">10.75″/12″/14″/16″/18″ — auto-scales with NBOS</div></div>
+    <div class="spec"><div class="k">Code basis</div><div class="v">API 5L, ASME B31.8, PHMSA strain-based design</div></div>
+  </div>
+</div></section>
+
+<section class="alt" id="economics"><div class="wrap">
+  <div class="section-head"><div class="kicker">The Economics</div><h2>A price-maker model</h2><p>Arctic Fox sets the rate at cost-of-service plus contracted return.</p></div>
+  <div class="econ">
+    <div class="row"><span class="k">Total CAPEX (screening)</span><span class="v">~$707M</span></div>
+    <div class="row"><span class="k">Equity / debt assumption</span><span class="v">60% E / 40% D interim; 100% equity long-term</span></div>
+    <div class="row"><span class="k">Target ROE</span><span class="v">14% (regulated transportation)</span></div>
+    <div class="row"><span class="k">Annual revenue requirement</span><span class="v">~$98.56M</span></div>
+    <div class="row"><span class="k">Break-even dry gas rate</span><span class="v">$6.77 / Mcf delivered</span></div>
+    <div class="row"><span class="k">Realized ROE @ 14% uplift</span><span class="v">~19.9% — still 60% below market</span></div>
+    <div class="row"><span class="k">State royalty</span><span class="v">20% of feed gas</span></div>
+    <div class="row"><span class="k">20-yr retained-in-state</span><span class="v">~$5.5B undiscounted</span></div>
+  </div>
+</div></section>
+
+<section id="community"><div class="wrap">
+  <div class="section-head"><div class="kicker">Community, Jobs & NBO Benefit</div><h2>Built in the Interior, by Alaskans</h2><p>With equity for the people whose lands it crosses.</p></div>
+  <div class="grid2">
+    <ul class="checklist">
+      <li>Construction phase: ~1,540 base FTE; peak ~3,250 in winter spreads.</li>
+      <li>Multi-year operations workforce based in Fairbanks and along the corridor.</li>
+      <li>Open Native equity participation for ASRC, Doyon, and Tanana Chiefs–affiliated village corporations.</li>
+      <li>Workforce training pathways with UAF, Ilisagvik, and union halls — pipefitters, welders, operators, instrumentation.</li>
+      <li>Direct delivered-cost reduction for Interior villages on the IGU and GVEA networks.</li>
+      <li>Procurement preference for in-state engineering, fabrication, and construction firms.</li>
+      <li>Permanent revenue: state royalty, property taxes to FNSB and corridor boroughs.</li>
+    </ul>
+    <figure class="photo"><img src="images/pipeline-corridor.jpg" alt="Dalton Highway pipeline construction corridor"><figcaption>Dalton Highway construction corridor</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="alt" id="timeline"><div class="wrap">
+  <div class="section-head"><div class="kicker">Timeline & Milestones</div><h2>Indicative path to service</h2></div>
+  <div style="background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:8px 26px">
+    <div class="tl-item" style="border-top:none"><div class="yr">2026</div><div><div class="h" style="color:#fff">Public launch</div><div class="d" style="color:#9fb3c7">NBOS outreach, equity invitations, signed indications</div></div></div>
+    <div class="tl-item" style="border-color:rgba(255,255,255,.08)"><div class="yr">2026–27</div><div><div class="h" style="color:#fff">Open Season + commercial</div><div class="d" style="color:#9fb3c7">Binding OS close, gas purchase contract, compression agreement</div></div></div>
+    <div class="tl-item" style="border-color:rgba(255,255,255,.08)"><div class="yr">2027</div><div><div class="h" style="color:#fff">FEED + permits</div><div class="d" style="color:#9fb3c7">Class 3 estimate, hydraulic finalization, CPCN, EIS scope, PHMSA filings</div></div></div>
+    <div class="tl-item" style="border-color:rgba(255,255,255,.08)"><div class="yr">2027–28</div><div><div class="h" style="color:#fff">Procurement</div><div class="d" style="color:#9fb3c7">Staged pipe and long-lead orders; mill conversations open today</div></div></div>
+    <div class="tl-item" style="border-color:rgba(255,255,255,.08)"><div class="yr">2028–30</div><div><div class="h" style="color:#fff">Construction</div><div class="d" style="color:#9fb3c7">Three lay spreads, peak winter workforce</div></div></div>
+    <div class="tl-item" style="border-color:rgba(255,255,255,.08)"><div class="yr" style="color:var(--amber2)">Target Oct 2030</div><div><div class="h" style="color:#fff">First gas to Interior</div><div class="d" style="color:#9fb3c7">Rates locked at cost-of-service from day one</div></div></div>
+  </div>
+  <p class="tnote" style="color:#7f93a8">Indicative only. Service date is paced by commercial commitments and permitting; no firm commitments are made here.</p>
+</div></section>
+
+<section id="team"><div class="wrap">
+  <div class="section-head"><div class="kicker">Team & Track Record</div><h2>Alaska-based, technically credible</h2><p>Commercially disciplined, with deep Arctic pipeline pedigree.</p></div>
+  <div class="grid2">
+    <ul class="checklist">
+      <li><strong>Fairbanks Pipeline Company</strong> — the active project entity: sole developer, operator, and sponsor of Arctic Fox, under a regulated rate base and standard transportation earnings model.</li>
+      <li><strong>Energia Cura</strong> — operating pedigree behind the team; a Fairbanks-based operator that has run and maintained one of Alaska's largest pipeline systems on a throughput basis. Track record only.</li>
+      <li><strong>Fairbanks Holding Company</strong> — prior holding structure referenced for background. Not active in this project.</li>
+      <li><strong>Engineering & advisory</strong> — long-standing relationships with Price Gregory, ANS engineering houses, and Arctic-experienced construction contractors.</li>
+    </ul>
+    <figure class="photo"><img src="images/prudhoe-bay.jpg" alt="Prudhoe Bay oil field infrastructure"><figcaption>Prudhoe Bay — origin of feed gas</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="alt faq" id="faq"><div class="wrap">
+  <div class="section-head"><div class="kicker">Public FAQ</div><h2>What this means for Interior Alaskans</h2></div>
+  <details><summary>Will Arctic Fox compete with the larger Alaska LNG project?</summary><div class="a">No. Arctic Fox is sized for the Interior — about 19 Bcf/yr at base — and serves a different need on a different timeline. The two projects address different markets: in-state heating, power, and industrial demand vs. world-scale LNG export.</div></details>
+  <details><summary>How much will it actually lower my heating and electric bill?</summary><div class="a">Delivered dry gas at break-even is about $6.77/Mcf vs. an Interior reference of $24.76/Mcf — roughly 73% lower. Propane drops from ~$3.96/gal to ~$1.39/gal. Per-household savings on heat and electric are estimated at roughly $2,000/yr at base case.</div></details>
+  <details><summary>Who pays for it? Is this a state subsidy?</summary><div class="a">No state subsidy. Arctic Fox is privately developed by Fairbanks Pipeline Company, Inc., with debt and equity from private sources. The state can take up to 7.2% equity in exchange for in-kind easements and permits — no cash outlay.</div></details>
+  <details><summary>Where will it run?</summary><div class="a">Roadside along the Dalton, Elliott, and Richardson Highways — Prudhoe Bay to Livengood (418 mi) and Livengood to Fox (66 mi). Same corridor as TAPS. Existing access, existing communities.</div></details>
+  <details><summary>What about the environment?</summary><div class="a">Roadside alignment minimizes new ground disturbance. PHMSA strain-based design is standard for Arctic service. Full EIS, ADEC, ADNR, BLM, and PHMSA review will apply — the same regulatory framework that governs every other major Alaska pipeline.</div></details>
+  <details><summary>How long until first gas?</summary><div class="a">Indicative path: 2026 commercial close, 2027 FEED and permits, 2027–28 procurement, 2028–30 construction. Service date depends on commercial commitments — but the pipeline is engineered to be in service in years, not decades.</div></details>
+</div></section>
+
+<section id="ask"><div class="wrap">
+  <div class="section-head"><div class="kicker">The Ask</div><h2>What we're inviting today</h2></div>
+  <div class="asks">
+    <div class="ask"><div class="t">PUBLIC</div><p>Recognition that an in-state, fit-for-purpose pipeline is the fastest, cheapest path to lower Interior energy cost.</p></div>
+    <div class="ask"><div class="t">LOAD CENTERS</div><p>Non-binding indications of nominated volumes from GVEA, IGU, Eielson, UAF, International Tower Hills, Kinross, Pogo.</p></div>
+    <div class="ask"><div class="t">INVESTORS</div><p>Tier 1 and Tier 2 equity participation. Standard 14% ROE on contracted return, with realized upside via Open Season uplift.</p></div>
+    <div class="ask"><div class="t">STATE & NATIVE</div><p>Easements and permits in exchange for up to 7.2% state equity in the Permanent Fund. Direct equity invitation to corridor Native corporations.</p></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div>
+      <h4>Let's get Alaska gas to Alaskans.</h4>
+      <p>Fairbanks Pipeline Company, Inc. · Fairbanks, Alaska</p>
+      <p style="margin-top:8px">Contact: Fairbanks Pipeline Company development team<br><a href="https://www.fairbankspipelinecompany.com">www.fairbankspipelinecompany.com</a></p>
+      <p style="margin-top:8px;color:#5f7488">Public launch edition — April 2026</p>
+    </div>
+    <div>
+      <h4>Sources</h4>
+      <p style="font-size:.8rem;color:#7f93a8">Project numbers are drawn from the Arctic Fox 2026 NBOS Master workbook (April 2026). Reference market prices are Interior Alaska proxies (IGU Schedule C, retail propane, AAA Alaska gasoline parity). Photography: public domain (BLM / USGS / NPS via Wikimedia Commons).</p>
+    </div>
+  </div>
+  <p class="notice">This website is informational. It is not an offer to sell or a solicitation of an offer to buy any security. Any equity, debt, or commodity participation will be conducted under applicable Alaska and federal securities, energy, and pipeline regulation, including review by the Regulatory Commission of Alaska, the SEC where applicable, and counterparties' own fiduciary processes. Numbers are screening-stage estimates derived from the Arctic Fox 2026 NBOS Master workbook (April 2026), subject to non-binding open season results, FEED engineering, Class 3 cost estimation, signed gas purchase contracts, and final regulatory determinations. Reference market prices are Interior Alaska proxies and are not contracted prices. Forward-looking statements reflect current assumptions and are not guarantees; actual outcomes may differ materially.</p>
+</div></footer>
+</body>
+</html>
