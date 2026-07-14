@@ -74,6 +74,10 @@ h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;margin-bottom:12px}
 .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
 table{border-collapse:collapse;width:100%;min-width:560px}
 th,td{padding:13px 16px;text-align:left;font-size:.92rem;border-bottom:1px solid var(--line)}
+td{color:var(--ink)}
+td strong{color:var(--ink)}
+.alt .tablewrap td{color:var(--ink)}
+.alt .tablewrap td strong{color:var(--ink)}
 th{background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:600;font-size:.85rem;text-transform:uppercase}
 tbody tr:last-child td{border-bottom:none}
 tbody tr:nth-child(even){background:#f2f6fa}
@@ -385,53 +389,14 @@ footer a{color:var(--ice)}
     <div class="ask"><div class="t">STATE / NATIVE / AGENCY</div><p>Corridor, permitting, and partnership discussions along the route.</p></div>
   </div>
 
-  <form class="form" onsubmit="return nbosSubmit(event)">
-    <div class="rowf">
-      <div><label>Full name</label><input required name="name" placeholder="Your name"></div>
-      <div><label>Company / organization</label><input required name="company" placeholder="Organization"></div>
-    </div>
-    <div class="rowf">
-      <div><label>Email (required for access)</label><input required type="email" name="email" placeholder="you@company.com"></div>
-      <div><label>Phone</label><input name="phone" placeholder="Optional"></div>
-    </div>
-
-    <label>Your role / company status</label>
-    <div class="checks">
-      <label><input type="checkbox" name="role" value="Producer"> Producer</label>
-      <label><input type="checkbox" name="role" value="End-user / Offtaker"> End-user / Offtaker</label>
-      <label><input type="checkbox" name="role" value="Trader / Reseller"> Trader / Reseller</label>
-      <label><input type="checkbox" name="role" value="Connecting Transporter"> Connecting Transporter</label>
-      <label><input type="checkbox" name="role" value="Investor / Lender"> Investor /
- Lender</label>
-      <label><input type="checkbox" name="role" value="State / Native / Agency"> State / Native / Agency</label>
-    </div>
-
-    <label>Commodity of interest</label>
-    <div class="checks">
-      <label><input type="checkbox" name="commodity" value="Spec gas (CH4)"> Natural gas (spec grade)</label>
-      <label><input type="checkbox" name="commodity" value="Non-spec ANS-raw"> Non-spec ANS-raw gas</label>
-      <label><input type="checkbox" name="commodity" value="NGLs"> NGLs</label>
-      <label><input type="checkbox" name="commodity" value="Propane"> Propane</label>
-    </div>
-
-    <div class="rowf">
-      <div><label>Level of commitment / interest</label>
-      <select name="commitment">
-        <option value="">Select…</option>
-        <option>Just exploring — send the overview</option>
-        <option>Serious interest — send the full NBOS package</option>
-        <option>Ready to submit an indicative nomination</option>
-        <option>Investor / partnership discussion</option>
-      </select></div>
-      <div><label>Indicative volume (optional)</label><input name="volume" placeholder="e.g. 1.5 Bcf/yr or 250,000 gal/yr"></div>
-    </div>
-
-    <label>What would you like to know or request?</label>
-    <textarea name="message" rows="3" placeholder="Your specific question or nomination detail…"></textarea>
-
-    <div style="margin-top:20px"><button class="btn primary" type="submit">Request access &amp; submit interest</button></div>
-    <p class="note">Non-binding. Your email is required to receive role-matched materials and the NBOS package. Firm nominations are formalized later on the Attachment A Indicative Interest Form. NBOS window closes 8 a.m. GMT, October 1, 2026.</p>
-  </form>
+  <div class="form" style="padding:0;overflow:hidden;background:transparent;border:none">
+    <iframe data-tally-src="https://tally.so/embed/xX10vJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0"
+            title="Arctic Fox NBOS — Indicative Interest"
+            style="border:none;background:transparent;min-height:900px"></iframe>
+    <p class="note" style="padding:0 4px">Non-binding. Firm nominations are formalized later on the Attachment A Indicative Interest Form. NBOS window closes 8 a.m. GMT, October 1, 2026.</p>
+  </div>
+  <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc})};if("undefined"!=typeof Tally)v();else if(null===d.querySelector('script[src="'+w+'"]')){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 
   <div class="pkgbox">
     <h4>What's in the NBOS package</h4>
@@ -445,7 +410,6 @@ footer a{color:var(--ice)}
     <p class="note" style="color:var(--steel)">Serious offtakers, investors, and agencies receive the full package on request. Casual inquiries receive the plain-language brief.</p>
   </div>
 
-  <div id="nbos-thanks" style="display:none;margin-top:20px" class="callout"><div class="big">Thank you — request received.</div><p>We'll route the materials matched to your role to the email you provided. For time-sensitive questions, reference the NBOS window closing October 1, 2026.</p></div>
 </div></div></section>
 </div>
 
@@ -472,12 +436,6 @@ function showTab(id){
   if(panel)panel.classList.add('active');
   document.querySelectorAll('.tabbar button').forEach(b=>{if(b.dataset.tab===id)b.classList.add('active')});
   window.scrollTo({top:document.querySelector('.tabbar').offsetTop-60,behavior:'smooth'});
-}
-function nbosSubmit(e){
-  e.preventDefault();
-  document.querySelector('#tab-nbos form').style.display='none';
-  document.getElementById('nbos-thanks').style.display='block';
-  return false;
 }
 </script>
 </body>
