@@ -168,7 +168,7 @@ footer a{color:var(--ice)}
   <div class="wrap">
     <span class="eyebrow">Public Launch Edition · 2026</span>
     <h1>Arctic Fox Pipeline</h1>
-    <p class="tag">North Slope gas, delivered to Interior Alaskans — moving homes off expensive diesel heat.</p>
+    <p class="tag">North Slope gas to the Interior — cheaper electricity, a stronger power grid, and lower heating costs for Alaskans.</p>
     <p class="sub">A 484-mile, 14-inch in-state natural gas and NGL pipeline from Prudhoe Bay to Fairbanks. Privately financed. No state subsidy required.</p>
     <div class="cta"><button class="btn primary" onclick="showTab('overview')">See the project</button><button class="btn ghost" onclick="showTab('nbos')">Get involved</button></div>
     <p class="sponsor">Sponsored by Fairbanks Pipeline Company, Inc. · Fairbanks, Alaska</p>
@@ -181,6 +181,7 @@ footer a{color:var(--ice)}
   <button data-tab="technical" onclick="showTab('technical')">Technical</button>
   <button data-tab="economics" onclick="showTab('economics')">Economics</button>
   <button data-tab="route" onclick="showTab('route')">Route &amp; Timeline</button>
+  <button data-tab="cookinlet" onclick="showTab('cookinlet')">Cook Inlet</button>
   <button data-tab="definitions" onclick="showTab('definitions')">Definitions</button>
   <button data-tab="faq" onclick="showTab('faq')">FAQ</button>
   <button data-tab="nbos" onclick="showTab('nbos')">Get Involved / NBOS</button>
@@ -188,23 +189,26 @@ footer a{color:var(--ice)}
 
 <div class="panel active" id="tab-overview">
 <section><div class="wrap">
-  <div class="section-head"><div class="kicker">At a Glance — General Overview</div><h2>What Arctic Fox is, in one screen</h2><p>A right-sized, in-state pipeline bringing North Slope natural gas and propane to the Fairbanks / North Pole / Eielson load center — so Interior homes and businesses can stop paying premium prices to heat with diesel and trucked-in LNG.</p></div>
+  <div class="section-head"><div class="kicker">At a Glance — General Overview</div><h2>What Arctic Fox is, in one screen</h2><p>A right-sized, in-state pipeline bringing North Slope natural gas and propane to the Fairbanks / North Pole / Eielson load center. It attacks Interior energy cost on three fronts at once: <strong>electricity</strong> (moving power generation off naphtha and diesel), <strong>the grid</strong> (firming Interior generation and feeding the Northern Intertie), and <strong>heat</strong> (lower rates for gas customers, propane for off-grid homes).</p></div>
   <div class="stats">
     <div class="stat"><div class="num">484<span class="u"> mi</span></div><div class="lab">Prudhoe Bay to Fairbanks (Fox)</div></div>
     <div class="stat"><div class="num">14<span class="u">″ pipe</span></div><div class="lab">Fit-for-purpose, not export-scale</div></div>
-    <div class="stat"><div class="num">19<span class="u"> Bcf/yr</span></div><div class="lab">Base Interior demand served</div></div>
-    <div class="stat"><div class="num">~$683<span class="u">M</span></div><div class="lab">Total project cost (screening)</div></div>
+    <div class="stat"><div class="num">19<span class="u"> Bcf/yr</span></div><div class="lab">Base Interior demand served (scales up)</div></div>
+    <div class="stat"><div class="num">230<span class="u"> kV</span></div><div class="lab">Northern Intertie — send power south</div></div>
   </div>
   <div style="margin-top:32px" class="grid2">
     <ul class="checklist">
       <li>A 484-mile, 14-inch in-state natural gas and NGL pipeline — Prudhoe Bay → Livengood → Fox.</li>
       <li>Sized to known Interior load (~19 Bcf/yr base), scalable through the 2026 Non-Binding Open Season.</li>
+      <li><strong>Cheaper, cleaner power:</strong> fuels Interior generation with gas instead of naphtha and diesel — the fuels driving GVEA electric rates up.</li>
+      <li><strong>Grid expansion:</strong> supports on-site generation at Fox that can feed the 230-kV Northern Intertie — and send surplus electrons <em>south</em> to relieve the Cook Inlet power shortage.</li>
+      <li><strong>Lower heating bills:</strong> lower rates for existing gas customers, plus propane from the NGL stream for rural, off-grid homes still burning heating oil.</li>
       <li>Carries dry gas <em>plus</em> propane and other NGLs — the same fuels Interior Alaskans already buy.</li>
       <li>Privately financed. No state subsidy required.</li>
       <li>Roadside corridor along the Dalton / Elliott / Richardson Highways — accessible and buildable.</li>
       <li>Targets first gas around 2030 — years, not decades.</li>
     </ul>
-    <div class="callout"><div class="big">The Gap</div><p>Alaska produces gas at world scale. Interior Alaskans still heat with some of the most expensive fuel in the country. Arctic Fox closes that gap.</p></div>
+    <div class="callout"><div class="big">The Gap</div><p>Alaska produces gas at world scale. Interior Alaskans still pay some of the highest electricity and heating costs in the country — and burn diesel to keep the lights on. Arctic Fox closes that gap.</p></div>
   </div>
   <div class="inquire"><div class="t">Have a question about your community?</div>Tell us who you are and what you'd like to know — utility, business, borough, or resident. <a onclick="showTab('nbos')">Send a specific inquiry →</a></div>
 </div></section>
@@ -212,11 +216,12 @@ footer a{color:var(--ice)}
 
 <div class="panel" id="tab-savings">
 <section class="alt"><div class="wrap">
-  <div class="section-head"><div class="kicker">The Problem &amp; The Savings</div><h2>Why Interior energy costs so much — and how Arctic Fox changes it</h2><p>Interior Alaska sits 500 miles from one of North America's largest gas reserves, yet heats with expensive diesel fuel oil and trucked LNG. The pipeline changes the supply, not just the sticker price.</p></div>
+  <div class="section-head"><div class="kicker">The Problem &amp; The Savings</div><h2>Why Interior energy costs so much — and how Arctic Fox changes it</h2><p>Interior Alaska sits 500 miles from one of North America's largest gas reserves, yet keeps the lights on by burning naphtha and diesel and heats homes with expensive fuel oil. The problem isn't just the heating bill — it's the <strong>electric bill and the grid behind it</strong>. Arctic Fox changes the fuel supply, not just the sticker price.</p></div>
   <div class="grid2">
     <ul class="checklist">
-      <li>Interior homes heat primarily with <strong>#1 heating oil (diesel fuel oil)</strong> — currently about <strong>$4.40/gal</strong> in Fairbanks, and around <strong>$5.75/gal</strong> at the 2022 peak.</li>
+      <li>Interior homes and utilities burn <strong>naphtha and #1 heating oil / diesel</strong> for power and heat — Interior heating oil averaged <strong>$6.81/gal</strong> in the January 2026 state survey. Electricity runs ~<strong>32.9¢/kWh</strong>.</li>
       <li>Interior Gas Utility (IGU) delivers gas trucked as LNG down the Dalton Highway from the <strong>North Slope</strong> — a real improvement, but the long haul keeps delivered cost high.</li>
+      <li>The Interior burned roughly <strong>250,000 gallons of diesel per day</strong> this past winter to generate power after Cook Inlet gas fell away — every <strong>+$1/gal on diesel adds ~$7.5M/month</strong> to generation cost, straight onto electric bills.</li>
       <li>Arctic Fox delivers <strong>dry gas for power and heat</strong> and <strong>propane from the NGL stream</strong> — letting Interior households move off costly diesel fuel oil and onto affordable piped gas and propane.</li>
       <li>The savings come from the <em>supply</em>, not a subsidy: North Slope molecules delivered by pipe instead of by truck.</li>
     </ul>
@@ -227,8 +232,9 @@ footer a{color:var(--ice)}
   <div class="tablewrap"><table>
     <thead><tr><th>Fuel (as used in the Interior)</th><th>Recent price</th><th>≈ Thermal-equivalent</th><th>Source basis</th></tr></thead>
     <tbody>
-      <tr><td>#1 heating oil / diesel fuel oil</td><td>~$4.40/gal</td><td>~$32/MMBtu</td><td>Fairbanks retail, 2026 (peak ~$5.75/gal in 2022)</td></tr>
-      <tr><td>Propane (delivered, retail)</td><td>~$3.29/gal</td><td>~$36/MMBtu</td><td>Interior AK retail, 2026</td></tr>
+      <tr><td>Electricity — GVEA residential (all-in)</td><td>~32.9¢/kWh</td><td>Fuel/COPA up to ~20.65¢/kWh (summer 2026)</td><td>GVEA / Alaska Beacon, 2026</td></tr>
+      <tr><td>#1 heating oil / diesel fuel oil</td><td>~$6.81/gal</td><td>~$49/MMBtu</td><td>Alaska DCCED Fuel Price Report, Jan 2026 (Interior avg)</td></tr>
+      <tr><td>Propane (rural / off-grid heating)</td><td>above ~$3.85/gal</td><td>~$42+/MMBtu</td><td>Statewide baseline est.; Interior runs materially higher</td></tr>
       <tr><td>IGU piped/LNG-trucked gas (delivered)</td><td>~$24.76/Mcf</td><td>~$24/MMBtu</td><td>IGU Schedule C reference tariff</td></tr>
       <tr><td><strong>Arctic Fox delivered gas</strong></td><td><strong>~$5.54/Mcf</strong></td><td><strong class="save">~$5.4/MMBtu</strong></td><td>FPC screening cost of service (v12)</td></tr>
     </tbody>
@@ -236,9 +242,9 @@ footer a{color:var(--ice)}
   <p class="tnote">Prices are recent Interior Alaska references, not spot quotes, and move with markets. The point isn't a single number — it's the structural gap: piped North Slope gas lands at a fraction of what trucked LNG and diesel fuel oil cost to deliver into the Fairbanks bowl.</p>
 
   <div style="margin-top:36px" class="savebar">
-    <div class="savecard"><div class="big">~78%</div><div class="h">Lower delivered gas cost</div><div class="d">Arctic Fox ~$5.54/Mcf vs IGU reference ~$24.76/Mcf.</div></div>
-    <div class="savecard"><div class="big">Diesel → gas</div><div class="h">Off fuel oil, onto pipe</div><div class="d">Homes and utilities move from ~$32/MMBtu diesel heat to piped gas.</div></div>
-    <div class="savecard"><div class="big">+ Propane</div><div class="h">NGLs delivered too</div><div class="d">~1,802 bpd of marketable propane/NGLs for off-main-line communities.</div></div>
+    <div class="savecard"><div class="big">Electric</div><div class="h">Off diesel &amp; naphtha</div><div class="d">Gas-fired Interior generation stabilizes rates — no more ~$7.5M/month per $1/gal diesel swing.</div></div>
+    <div class="savecard"><div class="big">Grid</div><div class="h">Firm + expand + export</div><div class="d">On-site generation at Fox feeds the 230-kV Northern Intertie and can send power south to Cook Inlet.</div></div>
+    <div class="savecard"><div class="big">Heat</div><div class="h">Lower rates + propane</div><div class="d">Lower rates for existing gas customers, plus ~1,802 bpd of propane/NGLs for off-grid homes on heating oil.</div></div>
   </div>
 
   <div class="inquire"><div class="t">Are you a utility, borough, or large fuel buyer?</div>We can run a delivered-cost comparison for your specific load. <a onclick="showTab('nbos')">Request a tailored estimate →</a></div>
@@ -255,7 +261,11 @@ footer a{color:var(--ice)}
     <div class="spec"><div class="k">Route</div><div class="v">Prudhoe Bay → Livengood → Fox</div></div>
     <div class="spec"><div class="k">Segment split</div><div class="v">418.2 mi trunk + 65.98 mi stem</div></div>
     <div class="spec"><div class="k">Base throughput</div><div class="v">~19 Bcf/yr</div></div>
-    <div class="spec"><div class="k">Capacity ceiling</div><div class="v">~44.1 Bcf/yr (14″ w/ compression)</div></div>
+    <div class="spec"><div class="k">Segment split</div><div class="v">Trunk 418.2 mi + stem 65.98 mi</div></div>
+    <div class="spec"><div class="k">Volume-based ladder</div><div class="v">14/16/18″ → 44.1 / 63.3 / 87.6 Bcf/yr</div></div>
+    <div class="spec"><div class="k">Livengood junction</div><div class="v">Flanged tie-in for future south-spur piping</div></div>
+    <div class="spec"><div class="k">Fox power block</div><div class="v">On-site 25 / 50 / 100 MW generation option</div></div>
+    <div class="spec"><div class="k">Capacity ceiling</div><div class="v">~44.1 Bcf/yr (14″ base, w/ compression)</div></div>
     <div class="spec"><div class="k">Wet feed at Prudhoe</div><div class="v">~20.18 Bcf/yr</div></div>
     <div class="spec"><div class="k">Total steel</div><div class="v">~62,895 net tons</div></div>
     <div class="spec"><div class="k">Gas service</div><div class="v">Wet, sweet ANS gas · ~12.07% CO₂</div></div>
@@ -265,7 +275,9 @@ footer a{color:var(--ice)}
   <div style="margin-top:32px" class="grid2">
     <ul class="checklist">
       <li><strong>Fit-for-purpose sizing.</strong> 14″ serves ~19 Bcf/yr base with 2.3× headroom to ~44.1 Bcf/yr — added later via compression horsepower, not by over-building steel now.</li>
-      <li><strong>Auto-stepping laterals.</strong> Secondary feeders step up in diameter with load; no over-spec at inception.</li>
+      <li><strong>Capacity tolerance follows volume.</strong> Trunk and stem are floored at 14″ for the base case; the model steps each segment <em>up</em> the ladder (16″ → 63.3 Bcf/yr, 18″ → 87.6 Bcf/yr) automatically as Open-Season nominations grow. Trunk sizes off total system load, stem off Fairbanks load.</li>
+      <li><strong>Flanged at Livengood.</strong> The Livengood junction is built with a flanged tie-in so a future spur can pipe product <em>south</em> — keeping the option open without committing steel now.</li>
+      <li><strong>Power-generation expansion at Fox.</strong> The design accommodates an on-site 25/50/100 MW gas-fired generation block that can firm Interior power and feed the 230-kV Northern Intertie.</li>
       <li><strong>Cold-climate metallurgy.</strong> Charpy V-notch to −20 °C route minimum, −45 °C for Brooks Range / Atigun crossings.</li>
       <li><strong>Wet-gas corrosion allowance.</strong> Wall spec carries a corrosion allowance for the CO₂-driven sweet-corrosion regime of untreated ANS gas.</li>
     </ul>
@@ -324,6 +336,37 @@ footer a{color:var(--ice)}
 </div></section>
 </div>
 
+<div class="panel" id="tab-cookinlet">
+<section class="alt"><div class="wrap">
+  <div class="section-head"><div class="kicker">Cook Inlet &amp; the Railbelt</div><h2>Cook Inlet's problem isn't heat — it's power</h2><p>Southcentral Alaska's gas basin can still keep homes warm and refrigerators running for years. What it can no longer do is fuel <strong>power generation</strong> at Railbelt scale. Arctic Fox fixes that from the north.</p></div>
+
+  <div class="grid2">
+    <ul class="checklist">
+      <li><strong>Cook Inlet gas is fine for distribution.</strong> The ~33 Bcf/yr ENSTAR residential/commercial load — heating homes, cooking, refrigeration — is well within what existing reserves, workovers, and storage can deliver for 10–15 more years.</li>
+      <li><strong>Power generation is the load that breaks the basin.</strong> Chugach + former ML&amp;P + HEA/MEA burn roughly <strong>~50 Bcf/yr</strong> for electricity. That's the demand Cook Inlet can't sustain.</li>
+      <li><strong>The shortfall has arrived.</strong> Hilcorp will not renew firm contracts (May 2022 letter); ENSTAR sued Hilcorp (Jan 2025) over “catastrophic” shortage risk; Chugach's firm contract ends March 2028. Utilities are now planning around <strong>LNG imports at ~$14–20/Mcf</strong>.</li>
+      <li><strong>Arctic Fox is the cheaper fix.</strong> Generate power in the Interior on North Slope gas, then send surplus electrons <em>south</em> on the <strong>230-kV Northern Intertie</strong> — which AEA states is available to move power to Cook Inlet when the region is short. Cook Inlet keeps its distribution role; the Interior backstops Railbelt power.</li>
+    </ul>
+    <div class="callout"><div class="big">Two basins, one grid</div><p>The Interior has the gas Cook Inlet lacks. The Railbelt intertie already connects them. Arctic Fox turns North Slope molecules into Railbelt electrons — north to south when it counts.</p></div>
+  </div>
+
+  <div style="margin-top:36px" class="section-head"><div class="kicker">The numbers</div><h2>Supply, demand, and the price wedge</h2></div>
+  <div class="econ">
+    <div class="row"><div class="k">Cook Inlet PDP reserves (DNR 2022)</div><div class="v">~820 Bcf</div></div>
+    <div class="row"><div class="k">Southcentral firm demand (2026)</div><div class="v">~102 Bcf/yr</div></div>
+    <div class="row"><div class="k">Power-gen share of that demand</div><div class="v">~50 Bcf/yr</div></div>
+    <div class="row"><div class="k">PDP-only basin life at flat demand</div><div class="v">~8 yrs (exhausts ~2030)</div></div>
+    <div class="row"><div class="k">LNG-import delivered (Nikiski)</div><div class="v">~$14–20/Mcf</div></div>
+    <div class="row"><div class="k"><strong>Arctic Fox break-even bundled</strong></div><div class="v">~$3.59/Mcf</div></div>
+    <div class="row"><div class="k">Price wedge vs LNG imports</div><div class="v">4–5× cheaper</div></div>
+    <div class="row"><div class="k">Northern Intertie (Healy–Fairbanks)</div><div class="v">97 mi, 230 kV, energized 2003</div></div>
+  </div>
+  <p class="tnote">Sources: Alaska DNR/DOG 2018 &amp; 2022 Cook Inlet reserves reports; ENSTAR Alaska Utilities Working Group Phase I (2023); ADN / Commonwealth North reporting 2023–2026; Alaska Energy Authority Alaska Intertie fact sheet. The $3.59/Mcf figure is the workbook break-even at higher throughput; the ~$5.54/Mcf on the Economics tab is the base-case delivered rate — both far below imported LNG.</p>
+
+  <div class="inquire"><div class="t">Railbelt utility, regulator, or policymaker?</div>We can walk through the Cook Inlet supply/demand model and the intertie power case. <a onclick="showTab('nbos')">Request the Cook Inlet briefing →</a></div>
+</div></section>
+</div>
+
 <div class="panel" id="tab-definitions">
 <section><div class="wrap">
   <div class="section-head"><div class="kicker">Definitions</div><h2>Plain-English glossary</h2><p>Energy and pipeline projects are dense with jargon. Here's what the terms and acronyms on this site actually mean.</p></div>
@@ -365,6 +408,10 @@ footer a{color:var(--ice)}
     <dt>THM / Livengood</dt><dd>International Tower Hill Mines Ltd. (THM), owner of the Livengood Gold Project — a prospective anchor load along the route.</dd>
     <dt>Hilcorp</dt><dd>The primary North Slope gas counterparty (seller) after BP's 2020 Alaska divestiture.</dd>
     <dt>GVEA / IGU</dt><dd>Golden Valley Electric Association (Fairbanks electric co-op) and Interior Gas Utility (Interior gas distributor) — key Interior load centers.</dd>
+    <dt>Northern Intertie</dt><dd>The 97-mile, 230-kV electrical transmission line between Healy and Fairbanks (energized 2003). Part of the Railbelt grid; it can carry Interior-generated power <em>south</em> toward Cook Inlet when the region is short on electricity.</dd>
+    <dt>Railbelt</dt><dd>Alaska's interconnected electric grid running from Fairbanks through Anchorage to the Kenai Peninsula.</dd>
+    <dt>COPA</dt><dd>Cost of Power Adjustment — the fuel-and-purchased-power component of a GVEA electric bill. It rises with diesel and naphtha prices, which is why Interior electric rates spike when generation burns oil.</dd>
+    <dt>PDP</dt><dd>Proven Developed Producing reserves — gas from existing fields and wells. Cook Inlet's ~820 Bcf PDP is the deliverable supply, distinct from larger “undiscovered” resource estimates.</dd>
   </dl></div></div>
 </div></section>
 </div>
@@ -375,7 +422,9 @@ footer a{color:var(--ice)}
   <div class="faq">
     <details><summary>Is this the big state gas line I've heard about?</summary><div class="a">No. Arctic Fox is a right-sized, privately financed 14-inch in-state pipeline serving Interior demand — not the large-diameter export-scale interstate project. If a bigger line ever gets built, Arctic Fox still delivers gas to Alaskans in the near term.</div></details>
     <details><summary>Does this need state money?</summary><div class="a">No state subsidy is required. FPC is privately developing the project with debt and equity financing.</div></details>
-    <details><summary>How much cheaper is the gas, really?</summary><div class="a">Delivered Arctic Fox gas screens at ~$5.54/Mcf versus the Interior reference of ~$24.76/Mcf — roughly 78% lower on delivered gas. Households heating with diesel fuel oil (~$32/MMBtu) or buying trucked propane also gain access to cheaper piped supply.</div></details>
+    <details><summary>How much cheaper is the gas, really?</summary><div class="a">Delivered Arctic Fox gas screens at ~$5.54/Mcf (base case) versus the Interior reference of ~$24.76/Mcf — roughly 78% lower on delivered gas. Against imported LNG into Cook Inlet (~$14–20/Mcf), the workbook break-even (~$3.59/Mcf) is 4–5× cheaper.</div></details>
+    <details><summary>Does this help my electric bill, not just heating?</summary><div class="a">Yes — that's the core of it. GVEA's rate is ~32.9¢/kWh, driven up by burning diesel and naphtha for power (the Interior burned ~250,000 gal of diesel/day last winter). Fueling generation with gas stabilizes the fuel-cost (COPA) piece of every electric bill and firms the grid.</div></details>
+    <details><summary>How does this help Cook Inlet?</summary><div class="a">Cook Inlet can still heat homes and run refrigeration for years — its problem is power generation (~50 Bcf/yr) draining the basin. Arctic Fox generates power in the Interior on North Slope gas and sends surplus electrons south on the 230-kV Northern Intertie, which AEA states is available to move power to Cook Inlet when the region is short.</div></details>
     <details><summary>Where does the gas come from?</summary><div class="a">Alaska North Slope gas at Prudhoe Bay, with Hilcorp as the primary counterparty. It's piped 484 miles to the Interior instead of trucked as LNG.</div></details>
     <details><summary>When would gas actually flow?</summary><div class="a">Target commercial operation is around 2030, following the 2026 open season, binding agreements, permitting, and construction.</div></details>
     <details><summary>How do I express interest or ask a question?</summary><div class="a">Use the Get Involved / NBOS tab. Tell us your role and level of interest and we'll route you the right materials — from a plain-language brief to the full NBOS package.</div></details>
