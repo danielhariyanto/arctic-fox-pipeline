@@ -63,6 +63,17 @@ h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;margin-bottom:12px}
 .stat .num .u{font-size:1rem;color:var(--steel)}
 .alt .stat .num .u{color:var(--ice)}
 .stat .lab{margin-top:8px;font-size:.82rem;color:var(--steel);line-height:1.35}
+.prog{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.prog-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;font-size:.9rem;color:var(--ink);font-weight:600;margin-bottom:12px}
+.prog-val{font-family:'Barlow Condensed';font-size:1.15rem;color:var(--good);font-weight:700}
+.prog-track{position:relative;height:22px;background:#eef2f6;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.prog-fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#2e8b57,#6fcf97);border-radius:12px}
+.prog-mark{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--amber);transform:translateX(-1px)}
+.cmp{width:100%;border-collapse:collapse;font-size:.92rem}
+.cmp th,.cmp td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+.cmp th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--steel)}
+.cmp td:first-child{font-weight:600;color:var(--ink)}
+.cmp tbody tr:last-child td{border-bottom:none}
 .alt .stat .lab{color:#9fb3c7}
 .stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--amber)}
 .grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}
@@ -170,7 +181,7 @@ footer a{color:var(--ice)}
     <h1>Arctic Fox Pipeline</h1>
     <p class="tag">North Slope gas to the Interior — cheaper electricity, a stronger power grid, and lower heating costs for Alaskans.</p>
     <p class="sub">A 484-mile, 14-inch in-state natural gas and NGL pipeline from Prudhoe Bay to Fairbanks. Privately financed. No state subsidy required.</p>
-    <div class="cta"><button class="btn primary" onclick="showTab('overview')">See the project</button><button class="btn ghost" onclick="showTab('nbos')">Get involved</button></div>
+    <div class="cta"><button class="btn primary" onclick="showTab('overview')">See the project</button><button class="btn ghost" onclick="openForm()">Get involved</button></div>
     <p class="sponsor">Sponsored by Fairbanks Pipeline Company, Inc. · Fairbanks, Alaska</p>
   </div>
 </header>
@@ -185,6 +196,7 @@ footer a{color:var(--ice)}
   <button data-tab="datacenter" onclick="showTab('datacenter')">Data Centers &amp; Power</button>
   <button data-tab="definitions" onclick="showTab('definitions')">Definitions</button>
   <button data-tab="faq" onclick="showTab('faq')">FAQ</button>
+  <button data-tab="progress" onclick="showTab('progress')">NBOS Progress</button>
   <button data-tab="nbos" onclick="showTab('nbos')">Get Involved / NBOS</button>
 </div></div>
 
@@ -457,6 +469,45 @@ footer a{color:var(--ice)}
 </div></section>
 </div>
 
+<div class="panel" id="tab-progress">
+<section><div class="wrap">
+  <div class="section-head"><div class="kicker">Open Season Progress — Totals Only</div><h2>Where the 2026 Non-Binding Open Season stands</h2><p>Indicative interest to date, measured against the 2026 target minimums and the 2010 open-season result. Figures are aggregate totals only; individual participant nominations are held confidential.</p></div>
+
+  <div class="stats" style="margin-bottom:26px">
+    <div class="stat"><div class="num">12 <span class="u">Bcf/yr</span></div><div class="lab">2026 dry-gas indicative interest to date</div></div>
+    <div class="stat"><div class="num">19 <span class="u">Bcf/yr</span></div><div class="lab">2026 dry-gas target minimum</div></div>
+    <div class="stat"><div class="num">16.9 <span class="u">Bcf/yr</span></div><div class="lab">2010 NBOS dry-gas result (total)</div></div>
+    <div class="stat"><div class="num">1.5 <span class="u">M gal/yr</span></div><div class="lab">2026 propane target minimum</div></div>
+  </div>
+
+  <div class="prog">
+    <div class="prog-head"><span>2026 dry gas &mdash; indicative interest vs. target minimum</span><span class="prog-val">12 of 19 Bcf/yr &middot; 63%</span></div>
+    <div class="prog-track"><div class="prog-fill" style="width:63%"></div><div class="prog-mark" style="left:100%" title="19 Bcf/yr target minimum"></div></div>
+    <p class="note">63% of the 19 Bcf/yr target minimum committed as indicative (non-binding) interest. The open season runs through October 1, 2026.</p>
+  </div>
+
+  <div class="grid2" style="margin-top:30px">
+    <div>
+      <h3 style="font-family:'Barlow Condensed';font-size:1.5rem;margin-bottom:14px">2010 result vs. 2026 target</h3>
+      <table class="cmp">
+        <thead><tr><th></th><th>2010 result</th><th>2026 target min.</th></tr></thead>
+        <tbody>
+          <tr><td>Dry gas</td><td>16.9 Bcf/yr</td><td>19 Bcf/yr</td></tr>
+          <tr><td>Propane</td><td>1.5 M gal/yr</td><td>1.5 M gal/yr</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:12px">The 2026 target minimum lifts dry-gas throughput above the 2010 result while holding the propane floor. Capacity ceiling remains ~44.1 Bcf/yr with compression.</p>
+    </div>
+    <div class="callout">
+      <div class="big">Non-binding, and still open.</div>
+      <p style="color:#c9d6e2;font-size:.92rem">Every figure here is aggregate indicative interest &mdash; no obligation, no participant disclosed. Interest signaled now shapes the final line-pipe sizing before the Binding Open Season.</p>
+      <p style="margin-top:14px"><a onclick="showTab('nbos')" style="cursor:pointer;color:#ffd27a;font-weight:600">Add your interest &rarr;</a></p>
+    </div>
+  </div>
+
+</div></section>
+</div>
+
 <div class="panel" id="tab-nbos">
 <section><div class="wrap"><div class="gate">
   <div class="section-head"><div class="kicker">Get Involved — Non-Binding Open Season (NBOS)</div><h2>Tell us who you are and what you're looking for</h2><p>Arctic Fox is running a Non-Binding Open Season through <strong>October 1, 2026</strong>. Submitting interest here is <strong>non-binding</strong> — it signals demand and unlocks the materials matched to your role. There's no obligation.</p></div>
@@ -468,7 +519,7 @@ footer a{color:var(--ice)}
     <div class="ask"><div class="t">STATE / NATIVE / AGENCY</div><p>Corridor, permitting, and partnership discussions along the route.</p></div>
   </div>
 
-  <div class="form" style="padding:0;overflow:hidden;background:transparent;border:none">
+  <div class="form" id="nbos-form" style="padding:0;overflow:hidden;background:transparent;border:none">
     <iframe data-tally-src="https://tally.so/embed/xX10vJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy" width="100%" height="1100" frameborder="0" marginheight="0" marginwidth="0"
             title="Arctic Fox NBOS — Indicative Interest"
@@ -515,6 +566,13 @@ function showTab(id){
   if(panel)panel.classList.add('active');
   document.querySelectorAll('.tabbar button').forEach(b=>{if(b.dataset.tab===id)b.classList.add('active')});
   window.scrollTo({top:0,behavior:'smooth'});
+}
+function openForm(){
+  showTab('nbos');
+  setTimeout(function(){
+    var f=document.getElementById('nbos-form');
+    if(f)f.scrollIntoView({behavior:'smooth',block:'start'});
+  },120);
 }
 </script>
 </body>
